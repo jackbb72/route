@@ -1,7 +1,17 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <Next msg="Welcome to .... App"/>
+    <Next msg="Welcome to new .... App"/>
+    <hr>
+    <router-link
+        to="/foo"
+        msg="Fooo">Перейти к Foo</router-link>
+    <router-link to="/bar">Перейти к Bar</router-link>
+    
+    <p>Routs: </p>
+    
+    <router-view></router-view>
+    
   </div>
 </template>
 

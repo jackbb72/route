@@ -4,10 +4,10 @@
 
 <script>
 export default {
-  name: 'Next',
-  props: {
-    msg: String
-  }
+    name: 'Next',
+    props: {
+        msg: String
+    }
 }
 </script>
 
