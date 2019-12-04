@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import VueHead from 'vue-head'
 import App from './App.vue'
 import Next from './components/Next.vue'
 import Foo from './components/Foo.vue'
@@ -7,12 +8,18 @@ import Bar from './components/Bar.vue'
 
 Vue.config.productionTip = false
 
+Vue.use(VueHead)
 Vue.use(VueRouter)
 
 const routes = [
     {
         path: '/',
-        component: Next
+        component: Next,
+        props: {
+            msg: 'main page',
+            title: 'A main page',
+            description: 'Description of the main page'
+        }
     },
     { 
         path: '/foo', 
