@@ -12,6 +12,11 @@
     
     <router-view></router-view>
     
+    <footer>
+        <hr>
+        <p>&copy; 2019</p>
+    </footer>
+    
   </div>
 </template>
 
