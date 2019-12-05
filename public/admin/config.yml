@@ -1,0 +1,19 @@
+# Example
+# https://github.com/netlify/netlify-cms/blob/master/dev-test/config.yml
+backend:
+#    name: test-repo
+    name: github
+    repo: jackbb72/pages
+
+media_folder: media_folder
+
+collections:
+  - name: 'post'
+    label: 'Post'
+    label_singular: 'Post'
+    folder: 'posts'
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: true
+    fields:
+    - {name: title, label: Title}
+    - {name: body, label: Body, widget: markdown}
